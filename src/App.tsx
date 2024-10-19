@@ -55,10 +55,6 @@ export const App: React.FC = () => {
     return <UserWarning />;
   }
 
-  if (!filteredTodos) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div className="todoapp">
       <h1 className="todoapp__title">todos</h1>
