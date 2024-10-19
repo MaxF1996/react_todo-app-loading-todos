@@ -65,7 +65,9 @@ export const App: React.FC = () => {
           {filteredTodos.length > 0 && (
             <button
               type="button"
-              className={classNames('button', { active: isAllCompleted })}
+              className={classNames('todoapp__toggle-all', {
+                active: isAllCompleted,
+              })}
               data-cy="ToggleAllButton"
             />
           )}
