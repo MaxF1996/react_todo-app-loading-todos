@@ -1,12 +1,6 @@
 import classNames from 'classnames';
 import { Filters } from '../../types/Filters';
 
-// enum Filters {
-//   all = 'all',
-//   active = 'active',
-//   completed = 'completed',
-// }
-
 type Props = {
   currentFilter: Filters;
   onFilterChange: (filter: Filters) => void;
