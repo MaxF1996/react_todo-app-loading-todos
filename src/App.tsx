@@ -55,7 +55,7 @@ export const App: React.FC = () => {
     return filteredTodos.every(todo => todo.completed);
   }, [filteredTodos]);
 
-  const completedCount = useMemo(() => {
+  const uncompletedCount = useMemo(() => {
     return todos.reduce((acc, todo) => (todo.completed ? acc : acc + 1), 0);
   }, [todos]);
 
@@ -75,7 +75,7 @@ export const App: React.FC = () => {
         {/* Hide the footer if there are no todos */}
         {todos.length > 0 && (
           <Footer
-            completedCount={completedCount}
+            uncompletedCount={uncompletedCount}
             currentFilter={currentFilter}
             onFilterChange={onFilterChange}
           />
