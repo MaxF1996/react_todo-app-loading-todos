@@ -1,6 +1,6 @@
 import { Todo } from '../../types/Todo';
 import { ToggleAllButton } from '../../components/ToggleAllButton';
-import { SearchForm } from '../../components/SearchForm';
+import { Form } from '../../components/Form';
 
 type Props = {
   filteredTodos: Todo[];
@@ -16,7 +16,7 @@ export const Header: React.FC<Props> = ({ filteredTodos, isAllCompleted }) => {
       )}
 
       {/* Add a todo on form submit */}
-      <SearchForm />
+      <Form />
     </header>
   );
 };

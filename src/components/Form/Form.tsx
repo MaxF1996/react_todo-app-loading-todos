@@ -1,4 +1,4 @@
-export const SearchForm: React.FC = () => {
+export const Form: React.FC = () => {
   return (
     <form>
       <input
