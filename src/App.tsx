@@ -36,14 +36,16 @@ export const App: React.FC = () => {
 
     setCurrentFilter(filter);
 
+    const { all, active, completed } = Filters;
+
     switch (filter) {
-      case 'all':
+      case all:
         setFilteredTodos(todos);
         break;
-      case 'active':
+      case active:
         setFilteredTodos(todos.filter(todo => !todo.completed));
         break;
-      case 'completed':
+      case completed:
         setFilteredTodos(todos.filter(todo => todo.completed));
         break;
     }
